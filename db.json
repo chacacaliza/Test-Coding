@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "How Come",
+      "author": "Asabell Audida",
+      "purchprice": "80000",
+      "sellprice": "100000",
+      "stock": "2",
+      "image": "../assets/images/howcome.jpg"
+    },
+    {
+      "id": 2,
+      "title": "How Could",
+      "author": "Asabell Audida",
+      "purchprice": "10000",
+      "sellprice": "120000",
+      "stock": "5",
+      "image": "../assets/images/howcould.jpg"
+    },
+    {
+      "id": 3,
+      "title": "How to See",
+      "author": "Asabell Audida",
+      "purchprice": "90000",
+      "sellprice": "110000",
+      "stock": "10",
+      "image": "../assets/images/howtosee.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Lacuna",
+      "author": "Hyonashi",
+      "purchprice": "100000",
+      "sellprice": "120000",
+      "stock": "1",
+      "image": "../assets/images/lacuna.jpg"
+    }
+  ]
+}
