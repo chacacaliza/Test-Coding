@@ -22,7 +22,7 @@ const BookCreate = () => {
         const bookdata={id,author,purchprice,sellprice,stock,active};
         
 
-        fetch("http://localhost:3000/books/",{
+        fetch("http://localhost:8000/books/",{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify(bookdata)

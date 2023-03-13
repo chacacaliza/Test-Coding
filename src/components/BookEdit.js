@@ -7,7 +7,7 @@ const BookEdit = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:3000/books/" + bookid).then((res) => {
+        fetch("http://localhost:8000/books/" + bookid).then((res) => {
             return res.json();
         }).then((resp) => {
             idchange(resp.id);
@@ -38,7 +38,7 @@ const BookEdit = () => {
         const bookdata={id,title,author,purchprice,sellprice,stock,active};
         
 
-        fetch("http://localhost:3000/books/"+bookid,{
+        fetch("http://localhost:8000/books/"+bookid,{
             method:"PUT",
             headers:{"content-type":"application/json"},
             body:JSON.stringify(bookdata)
