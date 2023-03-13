@@ -8,7 +8,7 @@ const BookDetail = () => {
     const [bookdata, bookdatachange] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:8000/books/" + bookid).then((res) => {
+        fetch("http://localhost:3000/books/" + bookid).then((res) => {
             return res.json();
         }).then((resp) => {
             bookdatachange(resp);

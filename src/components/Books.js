@@ -15,7 +15,7 @@ const Books = () => {
 
     const Removefunction=(id)=> {
         if(window.confirm("Do you want to remove?")) {
-            fetch("http://localhost:8000/books/" + id, {
+            fetch("http://localhost:3000/books/" + id, {
                 method:"DELETE",
             }).then((res)=>{
                 alert('DELETE Successfully')
@@ -27,7 +27,7 @@ const Books = () => {
     }
 
     useEffect(() =>{
-        fetch("http://localhost:8000/books").then((res) => {
+        fetch("http://localhost:3000/books").then((res) => {
             return res.json();
         }).then((resp)=>{
             bookdatachange(resp);
